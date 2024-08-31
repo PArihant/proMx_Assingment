@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<manifest>
+  <control 
+    namespace="contactformns" 
+    constructor="contactform" 
+    version="0.0.1" 
+    display-name-key="contactform" 
+    description-key="contactform description" 
+    control-type="standard">
+    
+    <!-- Define the properties that this control will use -->
+    <property 
+      name="trial_contactform" 
+      display-name-key="Trial Contact Form" 
+      description-key="This field binds to the trial contact form" 
+      of-type="SingleLine.Text" 
+      usage="bound" 
+      required="true" 
+    />
+    
+    <!-- External Service Usage (if any external service is used, declare it here) -->
+    <external-service-usage enabled="false">
+      <!-- If using an external service, specify the domain here -->
+      <!-- Example: <domain>www.Microsoft.com</domain> -->
+    </external-service-usage>
+
+    <!-- Resources -->
+    <resources>
+      <code path="index.ts" order="1"/>
+      <!-- Add more resources like localization files if needed -->
+      <!-- Example: <resx path="strings/contactform.1033.resx" version="1.0.0" /> -->
+    </resources>
+
+    <!-- Feature Usage -->
+    <feature-usage>
+      <!-- Enable WebAPI usage -->
+      <uses-feature name="WebAPI" required="true" />
+      <!-- Add other features if necessary, e.g., Device, Utility, etc. -->
+    </feature-usage>
+
+  </control>
+</manifest>
